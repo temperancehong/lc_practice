@@ -1,0 +1,4 @@
+C:\Users\26236\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4167.35\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/MinGW/bin/mingw32-make.exe -DCMAKE_C_COMPILER=D:/MinGW/bin/mingw32-gcc.exe -DCMAKE_CXX_COMPILER=D:/MinGW/bin/mingw32-g++.exe -G "CodeBlocks - MinGW Makefiles" -S E:\E_Code\Leetcode\Day1 -B E:\E_Code\Leetcode\Day1\cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/E_Code/Leetcode/Day1/cmake-build-debug
