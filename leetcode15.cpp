@@ -5,6 +5,7 @@
 #include <vector>
 #include <set>
 #include <bits/stdc++.h>
+#include "leetcode15.h"
 using namespace std;
 
 
@@ -98,11 +99,11 @@ vector<vector<int>> threeSum(vector<int>& nums){
     return res;
 }
 
-int main(){
-    // nums = [-1,0,1,2,-1,-4]
-    vector<int> nums = {-1,0,1,2,-1,-4};
-    vector<vector<int>> main_res = threeSum(nums);
-    printf("the size of return %d", main_res.size());
-
-    return 0;
-}
+//int main(){
+//    // nums = [-1,0,1,2,-1,-4]
+//    vector<int> nums = {-1,0,1,2,-1,-4};
+//    vector<vector<int>> main_res = threeSum(nums);
+//    printf("the size of return %d", main_res.size());
+//
+//    return 0;
+//}

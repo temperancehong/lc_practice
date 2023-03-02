@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Day1.dir/leetcode15.cpp.obj.d"
   "CMakeFiles/Day1.dir/leetcode169.cpp.obj"
   "CMakeFiles/Day1.dir/leetcode169.cpp.obj.d"
+  "CMakeFiles/Day1.dir/main.cpp.obj"
+  "CMakeFiles/Day1.dir/main.cpp.obj.d"
   "Day1.exe"
   "Day1.exe.manifest"
   "Day1.pdb"

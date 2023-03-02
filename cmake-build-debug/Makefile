@@ -200,6 +200,30 @@ leetcode169.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Day1.dir\build.make CMakeFiles/Day1.dir/leetcode169.cpp.s
 .PHONY : leetcode169.cpp.s
 
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Day1.dir\build.make CMakeFiles/Day1.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Day1.dir\build.make CMakeFiles/Day1.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Day1.dir\build.make CMakeFiles/Day1.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +242,9 @@ help:
 	@echo ... leetcode169.obj
 	@echo ... leetcode169.i
 	@echo ... leetcode169.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 

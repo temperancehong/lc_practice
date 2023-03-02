@@ -85,10 +85,22 @@
 		<Unit filename="E:/E_Code/Leetcode/Day1/leetcode136.cpp">
 			<Option target="Day1"/>
 		</Unit>
+		<Unit filename="E:/E_Code/Leetcode/Day1/leetcode136.h">
+			<Option target="Day1"/>
+		</Unit>
 		<Unit filename="E:/E_Code/Leetcode/Day1/leetcode15.cpp">
 			<Option target="Day1"/>
 		</Unit>
+		<Unit filename="E:/E_Code/Leetcode/Day1/leetcode15.h">
+			<Option target="Day1"/>
+		</Unit>
 		<Unit filename="E:/E_Code/Leetcode/Day1/leetcode169.cpp">
+			<Option target="Day1"/>
+		</Unit>
+		<Unit filename="E:/E_Code/Leetcode/Day1/leetcode169.h">
+			<Option target="Day1"/>
+		</Unit>
+		<Unit filename="E:/E_Code/Leetcode/Day1/main.cpp">
 			<Option target="Day1"/>
 		</Unit>
 		<Unit filename="E:/E_Code/Leetcode/Day1/CMakeLists.txt">

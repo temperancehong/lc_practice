@@ -28,11 +28,11 @@ int singleNumber(vector<int>& nums) {
     return 0;
 }
 
-int main() {
-
-//    vector<int> nums = {1,2,1,2,3,3,4,6,5,5,6};
-    vector<int> nums = {1,1,2,3,4,5,4,5,3,-1,2};
-    int single = singleNumber(nums);
-    printf("The number is : %d\n",single);
-    return 0;
-}
+//int main() {
+//
+////    vector<int> nums = {1,2,1,2,3,3,4,6,5,5,6};
+//    vector<int> nums = {1,1,2,3,4,5,4,5,3,-1,2};
+//    int single = singleNumber(nums);
+//    printf("The number is : %d\n",single);
+//    return 0;
+//}

@@ -5,6 +5,7 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
+#include "leetcode169.h"
 using namespace std;
 
 int majorityElement(vector<int>& nums){
@@ -25,12 +26,12 @@ int majorityElement(vector<int>& nums){
 }
 
 
-int main(){
-
-    vector<int> nums = {2,2,1,1,1,2,2};
-//    vector<int> nums = {8,8,7,7,7};
-//    vector<int> nums = {3,2,3};
-    int major = majorityElement(nums);
-    printf("The major number is %d",major);
-    return 0;
-}
+//int main(){
+//
+//    vector<int> nums = {2,2,1,1,1,2,2};
+////    vector<int> nums = {8,8,7,7,7};
+////    vector<int> nums = {3,2,3};
+//    int major = majorityElement(nums);
+//    printf("The major number is %d",major);
+//    return 0;
+//}

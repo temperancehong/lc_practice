@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/E_Code/Leetcode/Day1/leetcode136.cpp" "CMakeFiles/Day1.dir/leetcode136.cpp.obj" "gcc" "CMakeFiles/Day1.dir/leetcode136.cpp.obj.d"
   "E:/E_Code/Leetcode/Day1/leetcode15.cpp" "CMakeFiles/Day1.dir/leetcode15.cpp.obj" "gcc" "CMakeFiles/Day1.dir/leetcode15.cpp.obj.d"
   "E:/E_Code/Leetcode/Day1/leetcode169.cpp" "CMakeFiles/Day1.dir/leetcode169.cpp.obj" "gcc" "CMakeFiles/Day1.dir/leetcode169.cpp.obj.d"
+  "E:/E_Code/Leetcode/Day1/main.cpp" "CMakeFiles/Day1.dir/main.cpp.obj" "gcc" "CMakeFiles/Day1.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.
