@@ -85,6 +85,12 @@
 		<Unit filename="E:/E_Code/Leetcode/Day2/main.cpp">
 			<Option target="Day2"/>
 		</Unit>
+		<Unit filename="E:/E_Code/Leetcode/Day2/solutions56.cpp">
+			<Option target="Day2"/>
+		</Unit>
+		<Unit filename="E:/E_Code/Leetcode/Day2/solutions56.h">
+			<Option target="Day2"/>
+		</Unit>
 		<Unit filename="E:/E_Code/Leetcode/Day2/solutions75.cpp">
 			<Option target="Day2"/>
 		</Unit>

@@ -3,4 +3,4 @@ project(Day2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Day2 main.cpp solutions75.h solutions75.cpp)
+add_executable(Day2 main.cpp solutions75.h solutions75.cpp solutions56.cpp solutions56.h)

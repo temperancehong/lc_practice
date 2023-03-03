@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/E_Code/Leetcode/Day2/main.cpp" "CMakeFiles/Day2.dir/main.cpp.obj" "gcc" "CMakeFiles/Day2.dir/main.cpp.obj.d"
+  "E:/E_Code/Leetcode/Day2/solutions56.cpp" "CMakeFiles/Day2.dir/solutions56.cpp.obj" "gcc" "CMakeFiles/Day2.dir/solutions56.cpp.obj.d"
   "E:/E_Code/Leetcode/Day2/solutions75.cpp" "CMakeFiles/Day2.dir/solutions75.cpp.obj" "gcc" "CMakeFiles/Day2.dir/solutions75.cpp.obj.d"
   )
 

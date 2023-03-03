@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Day2.dir\build.make CMakeFiles/Day2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+solutions56.obj: solutions56.cpp.obj
+.PHONY : solutions56.obj
+
+# target to build an object file
+solutions56.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Day2.dir\build.make CMakeFiles/Day2.dir/solutions56.cpp.obj
+.PHONY : solutions56.cpp.obj
+
+solutions56.i: solutions56.cpp.i
+.PHONY : solutions56.i
+
+# target to preprocess a source file
+solutions56.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Day2.dir\build.make CMakeFiles/Day2.dir/solutions56.cpp.i
+.PHONY : solutions56.cpp.i
+
+solutions56.s: solutions56.cpp.s
+.PHONY : solutions56.s
+
+# target to generate assembly for a file
+solutions56.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Day2.dir\build.make CMakeFiles/Day2.dir/solutions56.cpp.s
+.PHONY : solutions56.cpp.s
+
 solutions75.obj: solutions75.cpp.obj
 .PHONY : solutions75.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... solutions56.obj
+	@echo ... solutions56.i
+	@echo ... solutions56.s
 	@echo ... solutions75.obj
 	@echo ... solutions75.i
 	@echo ... solutions75.s
