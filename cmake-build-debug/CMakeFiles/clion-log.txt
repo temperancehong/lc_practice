@@ -1,4 +1,13 @@
 C:\Users\26236\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4167.35\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/MinGW/bin/mingw32-make.exe -DCMAKE_C_COMPILER=D:/MinGW/bin/mingw32-gcc.exe -DCMAKE_CXX_COMPILER=D:/MinGW/bin/mingw32-g++.exe -G "CodeBlocks - MinGW Makefiles" -S E:\E_Code\Leetcode -B E:\E_Code\Leetcode\cmake-build-debug
 -- Configuring done
--- Generating done
--- Build files have been written to: E:/E_Code/Leetcode/cmake-build-debug
+CMake Error at CMakeLists.txt:6 (add_executable):
+  Cannot find source file:
+
+    leetcode21.cpp,
+
+
+CMake Error at CMakeLists.txt:6 (add_executable):
+  No SOURCES given to target: Leetcode
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
