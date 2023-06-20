@@ -36,14 +36,21 @@ int main(){
                         v_states[0] = change_state(v_states_old[0]);
                     }
                 }
-                else
-                    if (v_states_old[i-1] == 1){
+                else{
+                    if (v_states_old[i-1] == 1) {
                         v_states[i] = change_state(v_states_old[i]);
                     }
+                }
+
             }
+            printf("T = %ld: ",t);
+            for (int k = 0; k < N; k++){
+                printf("%d ",v_states_old[k]);
+            }
+            printf("\n");
             v_states_old = v_states;
         }
-        cout<<"\n"<<endl;
+        cout<<"Out"<<endl;
         for (int i = 0; i < N; i++){
             cout<<v_states[i]<<endl;
         }
