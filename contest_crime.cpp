@@ -7,10 +7,11 @@ using namespace std;
 
 // Class for an undirected graph
 class Graph {
+public:
     int V;
     // Pointer to an array
-    // containing adjacency lists
-    list<int>* adj;
+    // containing adjacency vectors
+    vector<int>* adj;
 
 public:
     // Constructor
@@ -21,15 +22,15 @@ public:
 
 Graph::Graph(int V) {
     this->V = V;
-    adj = new list<int>[V]; // V lists of adjacent vertices
+    this->adj = new vector<int>[V]; // V vectors of adjacent vertices
 }
 
 void Graph::addEdge(int v, int w)
 {
-    // Add w to v’s list.
-    adj[v].push_back(w);
-    // Add v to w’s list.
-    adj[w].push_back(v);
+    // Add w to v’s vector.
+    this->adj[v].push_back(w);
+    // Add v to w’s vector.
+    this->adj[w].push_back(v);
 }
 
 int is_all_visited(vector<int> visited){
@@ -73,7 +74,7 @@ int main(){
             node2 = node2-1;
             g.addEdge(node1, node2);
         }//finished initializing the graph
-
+        printf("All streets added\n");
         queue<int> q;
         queue<int> empty;
 
@@ -84,15 +85,68 @@ int main(){
             swap(q, empty); // empty the queue
             int start_vertex;
             vector<int>::iterator it_visited;
+
+            // getting the first unvisited node
             for (it_visited = visited.begin(); it_visited < visited.end(); it_visited++){
                 if (*it_visited == 0){
                     start_vertex = *it_visited;
                     break;
                 }
             }
-
+            q.push(start_vertex);
+            visited[start_vertex] = 1;
+            while (!q.empty()){
+                int curr_vertex = q.front(); // get first
+                q.pop(); // delete first
+                if (labels[curr_vertex] == 0){// unmarked
+                    labels[curr_vertex] = 1; // meaning it's possible to put a station here
+                    for (int k = 0; k < g.adj[curr_vertex].size(); k++){// take all its neighbors and mark them
+                        if (visited[g.adj[curr_vertex][k]] == 0){ // mark it as visited
+                            visited[g.adj[curr_vertex][k]] = 1;
+                            q.push(g.adj[curr_vertex][k]); // push this node into queue
+                        }
+                        if (labels[g.adj[curr_vertex][k]] == 0){ //if it's not labeled
+                            // this neighbor is not marked
+                            labels[g.adj[curr_vertex][k]] = -1; // mark it inaccessible
+                        }
+                    }
+                }
+                else if (labels[curr_vertex] == -1){
+                    for (int k = 0; k < g.adj[curr_vertex].size(); k++){
+                        if (visited[g.adj[curr_vertex][k]] == 0){
+                            visited[g.adj[curr_vertex][k]] = 1;
+                            q.push(g.adj[curr_vertex][k]);
+                        }
+                        if (labels[g.adj[curr_vertex][k]] == 0){
+                            labels[g.adj[curr_vertex][k]] = -1; // mark accessible
+                        }
+                    }
+                }
+            }
+            all_visited = is_all_visited(visited);
         }
-
+        int impossible = 0;
+        for (int j = 0; j < n; j++){
+            // check if there is any sides with two +
+            if (labels[j] == 1){
+                // if this is a station
+                for (int l = 0; l < (g.adj[j]).size(); l++){
+                    int curr_neighbor = g.adj[j][l];
+                    if (labels[curr_neighbor] == 1){
+                        printf("Impossible");
+                        impossible = 1;
+                        break;
+                    }
+                }
+            }
+        }
+        int stations = 0;
+        for (int j = 0; j < n; j++){
+            if (labels[j] == 1){
+                stations++;
+            }
+        }
+        printf("%d",stations);
 
 
     }
