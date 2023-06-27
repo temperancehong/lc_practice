@@ -42,11 +42,13 @@ vector<vector<int>> generate(int numRows) {
 
 }
 
-
+vector<int> getRow(int rowIndex){
+    vector<vector<int>> res = generate(rowIndex+1);
+    return res[res.size()-1];
+}
 
 int main(){
-    vector<vector<int>> res = generate(5);
-    for (int i = 0; i < res.size();i++){
-        print_vector(res[i]);
-    }
+//    vector<vector<int>> res = generate(5);
+    vector<int> last_line = getRow(5);
+    print_vector(last_line);
 }
