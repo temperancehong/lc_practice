@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ignore all
 *
 
@@ -5,4 +6,13 @@
 !*.*
 
 # Unignore all dirs
+=======
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+>>>>>>> 0f624ce6372e51a14920d90879008100a776bbc5
 !*/
