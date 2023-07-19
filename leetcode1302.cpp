@@ -26,7 +26,7 @@ int height(TreeNode* root){
         return 0;
     }
     else{
-        return max(1+height(root->left), 1+height(root->left));
+        return max(1+height(root->left), 1+height(root->right));
     }
 }
 
