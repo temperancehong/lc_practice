@@ -87,3 +87,50 @@ int maxProfit(vector<int>& prices) {
     return max_profit;
 }
 ```
+
+### Leetcode11 - Container With Most Water
+
+This is a code that works but exceeding the time limit, which is of complexity O(N^2):
+```c++
+int maxArea(vector<int>& height) {
+    int n=height.size();
+    int left=0, right=1;
+    int max_area=0;
+    for (left=0; left<n-1;left++){
+        //for left fix, move the right pointer
+        for (right=left+1;right<n;right++){
+            int area=min(height[right],height[left])*(right-left);
+            if (area > max_area){
+                max_area=area;
+            }
+        }
+    }
+    return max_area;
+
+}
+```
+
+So the brut force doesn't work. We use two pointers.
+
+Since we want the area to be as big as possible, we initiate the left pointer at the very left, the right pointer at very right.
+Shift the pointer that has lower height. Closing in from both sides to the middle.
+
+This is a code that works, with linear time complexity:
+```c++
+int maxArea(vector<int>& height) {
+    int n=height.size();
+    int left=0, right=n-1;
+    int max_area=0;
+    while (right > left){
+        int area = (right-left)*min(height[right],height[left]);
+        if (area>max_area) max_area = area;
+        if (height[left]<height[right]){
+            left++;
+        }
+        else{
+            right--;
+        }
+    }
+    return max_area;
+}
+```
