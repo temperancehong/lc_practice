@@ -134,3 +134,9 @@ int maxArea(vector<int>& height) {
     return max_area;
 }
 ```
+
+## Hashmap
+
+### Leetcode383 Ransom note
+
+Establishing a hashmap for magazine and get a count-down for ransomNote.
