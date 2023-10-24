@@ -140,3 +140,53 @@ int maxArea(vector<int>& height) {
 ### Leetcode383 Ransom note
 
 Establishing a hashmap for magazine and get a count-down for ransomNote.
+
+### Leetcode205 Isomorphic Strings
+This code doesn't work for the third test case with `title` and `paper`, I don't know why.
+```c++
+bool isIsomorphic(string s, string t) {
+    map<char, vector<int>> s_map, t_map; // the char and the corresponding positions
+    int n=s.size();
+    for (int i=0;i<n;i++){
+        if (s_map.find(s[i])==s_map.end()){
+            vector<int> letter_s;
+            letter_s.push_back(i);
+            s_map[s[i]] = letter_s;
+        }
+        else{
+            s_map[s[i]].push_back(i);
+        }
+    }
+
+    for (int i=0;i<n;i++){
+        if (t_map.find(t[i])==t_map.end()){
+            vector<int> letter_t;
+            letter_t.push_back(i);
+            t_map[t[i]] = letter_t;
+        }
+        else{
+            t_map[t[i]].push_back(i);
+        }
+    }
+
+    if (s_map.size() != t_map.size()){
+        return false;
+    }
+    else{
+//        int m = s_map.size();
+        vector<int> v1, v2;
+        map<char, vector<int>>::iterator it_s = s_map.begin();
+        map<char, vector<int>>::iterator it_t = t_map.begin();
+        while (it_s != s_map.end()){
+            v1 = it_s->second;
+            v2 = it_t->second;
+            if (v1 != v2){
+                return false;
+            }
+            it_s++;it_t++;
+        }
+    }
+    return true;
+
+}
+```
