@@ -23,6 +23,26 @@ void printCharMap(const std::map<char, std::vector<int>>& charMap) {
 }
 
 
+//bool isIsomorphic(string s, string t) {
+//    map<char, char> s_to_t;
+//    int n = s.length();
+//    int i=0;
+//    while (i<n){
+//        if (s_to_t.find(s[i]) == s_to_t.end()){
+//            // new letter
+//            s_to_t[s[i]] = t[i];
+//        }
+//        else{
+//            // existing letter
+//            if (s_to_t[s[i]] != t[i]){
+//                return false;
+//            }
+//        }
+//        i++;
+//    }
+//    return true;
+//}
+
 bool isIsomorphic(string s, string t) {
     map<char, vector<int>> s_map, t_map; // the char and the corresponding positions
     int n=t.length();
@@ -46,8 +66,6 @@ bool isIsomorphic(string s, string t) {
                 return false;
             }
         }
-        printCharMap(s_map);
-        printCharMap(t_map);
         i++;
     }
     return true;
